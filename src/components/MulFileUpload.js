@@ -8,7 +8,7 @@ function MulFileUpload(){
         const data = new FormData();
         data.append("file", file);
     
-        Axios.post("http://localhost:5000/posts/upload", data)
+        Axios.post("https://cmpg323project2-backendn.herokuapp.com/posts/upload", data)
           .then(res => console.log(res))
           .catch(err => console.log(err));
       };
